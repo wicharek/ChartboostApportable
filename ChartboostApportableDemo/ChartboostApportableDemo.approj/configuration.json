@@ -229,7 +229,7 @@
 
     //A list of java Librarys (jars)
     "java_libs": [
-	  "../ChartboostApportable/Chartboost/chartboost.jar"
+	  "../ChartboostApportable/chartboost.jar"
 	],
 
     //A list of java resource directories

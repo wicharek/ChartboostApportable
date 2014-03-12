@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF79419418D0B2CD00EF71D8 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79419218D0B2CD00EF71D8 /* libChartboost.a */; };
 		EF79419618D0B31700EF71D8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79419518D0B31700EF71D8 /* SystemConfiguration.framework */; };
 		EF79419818D0B31C00EF71D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79419718D0B31C00EF71D8 /* AdSupport.framework */; };
+		EF79419C18D0C08E00EF71D8 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79419B18D0C08E00EF71D8 /* libChartboost.a */; };
 		EFD2627618D0B19700846090 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD2627518D0B19700846090 /* QuartzCore.framework */; };
 		EFD2627818D0B19700846090 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD2627718D0B19700846090 /* OpenGLES.framework */; };
 		EFD2627A18D0B19700846090 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD2627918D0B19700846090 /* OpenAL.framework */; };
@@ -128,10 +128,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF79419018D0B2CD00EF71D8 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
-		EF79419218D0B2CD00EF71D8 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
 		EF79419518D0B31700EF71D8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EF79419718D0B31C00EF71D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EF79419A18D0C08E00EF71D8 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
+		EF79419B18D0C08E00EF71D8 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
 		EFD2627218D0B19700846090 /* ChartboostApportableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartboostApportableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD2627518D0B19700846090 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFD2627718D0B19700846090 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -379,7 +379,7 @@
 				EFD2627A18D0B19700846090 /* OpenAL.framework in Frameworks */,
 				EFD2628018D0B19800846090 /* UIKit.framework in Frameworks */,
 				EFD2627618D0B19700846090 /* QuartzCore.framework in Frameworks */,
-				EF79419418D0B2CD00EF71D8 /* libChartboost.a in Frameworks */,
+				EF79419C18D0C08E00EF71D8 /* libChartboost.a in Frameworks */,
 				EFD2627E18D0B19800846090 /* AVFoundation.framework in Frameworks */,
 				EFD2628418D0B19800846090 /* CoreGraphics.framework in Frameworks */,
 				EFD2627818D0B19700846090 /* OpenGLES.framework in Frameworks */,
@@ -391,20 +391,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF79418F18D0B2CD00EF71D8 /* Chartboost */ = {
+		EF79419918D0C08E00EF71D8 /* Chartboost */ = {
 			isa = PBXGroup;
 			children = (
-				EF79419018D0B2CD00EF71D8 /* Chartboost.h */,
-				EF79419218D0B2CD00EF71D8 /* libChartboost.a */,
+				EF79419A18D0C08E00EF71D8 /* Chartboost.h */,
+				EF79419B18D0C08E00EF71D8 /* libChartboost.a */,
 			);
-			name = Chartboost;
-			path = ../ChartboostApportable/Chartboost;
+			path = Chartboost;
 			sourceTree = "<group>";
 		};
 		EFD2626918D0B19700846090 = {
 			isa = PBXGroup;
 			children = (
-				EF79418F18D0B2CD00EF71D8 /* Chartboost */,
+				EF79419918D0C08E00EF71D8 /* Chartboost */,
 				EFD2628518D0B19800846090 /* ChartboostApportableDemo */,
 				EFD2627418D0B19700846090 /* Frameworks */,
 				EFD2627318D0B19700846090 /* Products */,
@@ -1004,6 +1003,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Volumes/Data/Wicharek/Projects/ChartboostApportable/ChartboostApportable/Chartboost,
+					/Volumes/Data/Wicharek/Projects/ChartboostApportable/ChartboostApportableDemo/Chartboost,
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1024,6 +1024,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Volumes/Data/Wicharek/Projects/ChartboostApportable/ChartboostApportable/Chartboost,
+					/Volumes/Data/Wicharek/Projects/ChartboostApportable/ChartboostApportableDemo/Chartboost,
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
