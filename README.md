@@ -13,6 +13,7 @@ Steps to implement, asuming you already have Chartboost in iOS version of your p
 1. Run apportable load on your project if you haven't yet.
 2. Move ChartboostApportable folder to your project folder.
 3. Edit _*.approj.configuration.json_. Add the following code to add_params section (paths are relative to root folder, make sure they are correct):
+        ```
         "sources": [
           "./ChartboostApportable/Chartboost_Android.m"
         ],
@@ -26,5 +27,6 @@ Steps to implement, asuming you already have Chartboost in iOS version of your p
         "java_libs": [
       	  "../ChartboostApportable/chartboost.jar"
       	]
+        ```
 
 That's it. You should be all set. Chartboost API calls should be working. Make sure you have created the separate application in Chartboost console and set correct id and signature in your code.
